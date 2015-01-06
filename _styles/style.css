@@ -1,0 +1,55 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #E8770B;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: 150px;
+    font-weight: bold;
+    width: 700px;
+    text-align: center;
+    color: #FF180D;
+    position: fixed;
+    left: 50%;
+    top: 200px;
+    margin-left: -350px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    max-width:100%;
+}
+
+.back {
+    transform-origin: 50% 50%;
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    bottom: 0%;
+}
+
+.back1 {
+    transform-origin: 50% 50%;
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    top: 0%;
+}
+
+
+
+
+
