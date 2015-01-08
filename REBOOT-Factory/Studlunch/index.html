@@ -2,58 +2,81 @@
 <html lang="fr">
 	<head>
 		<title>Studlunch</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1.0">
-        <meta name="viewport" content="user-scalable=no">
-        <meta name"mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0"/>
+        <meta name="viewport" content="user-scalable=no"/>
+        <meta name="mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-
-		<div class="screen">
-
-
-		<!--LANDING PAGE-->
-
-			<section class="section__screen">
+	
+        <!--LANDING PAGE-->
+            <section class="section__screen">
 				<h1>Studlunch</h1>
-            	<img class="logo" src="_img/logo.svg" alt="Logo_WebApp"></a>
-        		<img class="back" src="_img/back.png" alt="back"/>
+                <p>Restaurant nearby</p>
+                <div class="logo">
+            	   <img src="_img/logo.svg" alt="Logo_WebApp">
+                </div>
+                <div>
+                    <img class="loading" src="_img/barre.gif" alt="loading_bar">
+        		      <img class="back" src="_img/back.png" alt="back"/>
+                </div>
+
     		</section>
 
 		<!--MAP PAGE-->
+            <section class="section__map">
 
-    		<section class="section section__map">
-    			<header>
-            		<img class="logo_small" src="_img/logo.svg" alt="Logo_WebApp"></a>
-            		<fieldset>
-                	<input type="search" />
-            		</fieldset>
-        		</header>
-            	<div>
-                	<img class="circle circle__1" src="_img/circle_1.png" alt="circle1">
-                	<img class="circle circle__2" src="_img/circle_2.png" alt="circle2">
-            	</div>
-            	<button class="button1">LISTE</button></a>
+    			<div class="header">
+                    <img class="logo_small" src="_img/logo.png" alt="Logo_WebApp">
+                    <form>
+                        <fieldset>
+                            <input type="search" placeholder="recherche" />
+                        </fieldset>
+                    </form>
+                </div>
+           <button class="wheel1">LISTE</button>
+
     		</section>
 
-    	<!--LIST PAGE-->
+        <!--LISTE PAGE-->
+            <section class="section__list">
 
-    		<section class="section section__list">
-    			<header>
-           			<img class="logo_small" src="_img/logo.svg" alt="Logo_WebApp"></a>
-            		<fieldset>
-                		<input type="search" />
-            		</fieldset>
-        		</header>
-            	<button class="button2">MAP</button></a>
-    		</section>
+                <div class="header">
+                    <img class="logo_small" src="_img/logo.png" alt="Logo_WebApp">
+                    <form>
+                        <fieldset>
+                            <input type="search" placeholder="recherche" />
+                        </fieldset>
+                    </form>
+                </div>
+            <button class="wheel2">MAP</button>
+           
+
+            </section>
+
+
+         
+
+    
+
+
+
 
     	<!--NEXT PAGE ...-->
-
-    	</div>
-
+        <script src="script.js"></script>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
