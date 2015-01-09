@@ -8,6 +8,15 @@ var wheel1 = document.getElementsByClassName("wheel1"),
 	
 	});
 
+var profil1 = document.getElementsByClassName("profil1"),
+	section__profil = document.getElementsByClassName("section__profil");
+
+
+		profil1[0].addEventListener("click", function () {
+		section__profil[0].classList.toggle('section__profil--open');
+	
+	});
+                    
 var Bouton = document.getElementsByClassName ("footer"),
 	Map = document.getElementById ("Map"),
 	Liste = document.getElementById ("Liste");

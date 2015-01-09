@@ -230,6 +230,7 @@ button {
     font-size: 170px;
     text-align: center;
     z-index: 8;
+    background-color: red;
     
 }
 
@@ -276,13 +277,26 @@ button {
 
 }
 
+.profil1 {
+    
+}
+
 
 .section__profil{
     position: fixed;
+    top: 12%;
+	width: 100%;
+	height: 77.7%;
+    background-color: #fafafa;
 	-webkit-transform: translateX(200%);
-    height: 100%;
-    width: 100%;
+    z-index: 6;
+    overflow: scroll;
+   
 
+}
+
+.section__profil--open{
+    -webkit-animation: TransPageList .6s forwards;
 }
 
 .Menu{
