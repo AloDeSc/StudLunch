@@ -10,7 +10,6 @@ form {
 	width: 100%;
 }
 
-/********************* SECTION SCREEN ***********************/
 .section__screen>h1 {
     font-weight: bold;
     text-decoration: underline;
@@ -39,11 +38,7 @@ form {
 	width: 100%;
 	height: 100%;
 	-webkit-animation: landing 1s 5s forwards;
-   
-    
-	
-	
-	/*Forwards bloque l'animation à sa position finale*/
+    display: none;
 }
 
 .title__principal {
@@ -74,8 +69,6 @@ form {
     top: 20%;
 }
 
-/******************* FIN SECTION SCREEN ***********************/
-
 fieldset {
 	width: 75%;
 	height: 15%;
@@ -84,7 +77,6 @@ fieldset {
 	left: 20%;
 	padding: 0;
     border: none;
-
 }
 
 input {
@@ -98,23 +90,19 @@ input {
 	background-color: #FAFAFA;
 }
 
-
-
 .header {  
     position: fixed;
 	height: 170px;
 	width: 100%;
 	background-color: #E88D00;
     z-index: 5;
-	
-   
-  
 }
+
 button {
 	border: none;
 	padding: 6%;
 }
-
+/*
 .wheel1 {
     position: fixed;
     
@@ -124,55 +112,56 @@ button {
 
 }
 
-
-/************************** SECTION MAP **************************/
-
+*/
 
 .section__map {
 	position: fixed;
 	width: 100%;
-	height: 100%;
+	height: 1700px;
 	background-color: #EB5500;
 	z-index: 2;
-    
-  
-   
-	
-	
+}
+
+.map {
+top:169px;
+position:fixed;
+width:100%;
+height:100%;
+overflow:scroll;
+}
+
+.map>img{
+height:100%;
+
 }
 
 .section__list--map {
 	-webkit-animation: TransPageMap .8s forwards;
 }
 
-
 .footer {
-	height: 145px;
+	height: 170px;
 	width: 100%;
 	background-color: #E88D00;
 	position: fixed;
-	bottom: 0%;
+	bottom:0;
     z-index: 5;
 }
 
-/*************************** FIN SECTION MAP ***************************/
-
-/************************* SECTION LISTE *********************************/
-
 .section__list {
     position: fixed;
-    top: 12%;
+    top: 169px;
 	width: 100%;
-	height: 77.7%;
+	height: 100%;
 	background-color: #FAFAFA;
 	-webkit-transform: translateX(100%);
 	z-index: 3;
-    overflow: scroll;
-   
-    
+    overflow: scroll
 }
 
-.section__list--list {
+
+
+.section__list--open {
 	-webkit-animation: TransPageList 0.8s forwards;
 	
 	
@@ -183,120 +172,41 @@ button {
     width:100%;
 }
 
-.listAnimation {
-	width: 100%;
-	height: 100%;
-
-}
-
-.listAnimation--go {
-	-webkit-animation: listElement1 2s forwards;
-	-webkit-animation: listElement2 2s forwards;
-	-webkit-animation: listElement3 2s forwards;
-	-webkit-animation: listElement4 2s forwards;
-	-webkit-animation: listElement5 2s forwards;
-}
-
-
 .list__el {
     height:200px;
-
+    width: 100%;
     margin:0;
     border-bottom: 7px solid #872200;
     color: black;
-    
 }
 
-
 .list{
-
     background:white;
 }
 
-.grignotin {
+.profil {
     width:80%;
     height:100%;
-    margin:0;
+    margin-left: 10%;
     font-size: 60px;
     font-weight: bold;
     text-align: left;
 	float:left;
 }
 
-.fleche {
-    width:20%;
-    height:100%;
-	float:right;
-    font-size: 170px;
-    text-align: center;
-    z-index: 8;
-    background-color: red;
-    
-}
-
-
-
-
-.listElement1 {
-	-webkit-animation: listElement1 1s forwards;
-	-webkit-transform: translateX(-100%;);
-}
-
-.listElement2 {
-	-webkit-animation: listElement2 1s forwards;
-	-webkit-transform: translateX(-100%;);
-}
-
-.listElement3 {
-	-webkit-animation: listElement3 1s forwards;
-	-webkit-transform: translateX(-100%;);
-}
-
-.listElement4 {
-	-webkit-animation: listElement4 1s forwards;
-	-webkit-transform: translateX(-100%;);
-}
-
-.listElement5 {
-	-webkit-animation: listElement5 1s forwards;
-	-webkit-transform: translateX(-100%;);
-}
-
-
-
-
-/************************* FIN SECTION LISTE *****************************/
-
-/************************** SECTION PROFIL RESTAURANT ******************/
-
-.content{
-	font-size: 50px;
-    position: absolute;
-	width:100%;
-	height: 100%;
-
-}
-
-.profil1 {
-    
-}
-
-
 .section__profil{
     position: fixed;
-    top: 12%;
+    top: 169px;
 	width: 100%;
-	height: 77.7%;
-    background-color: #fafafa;
-	-webkit-transform: translateX(200%);
-    z-index: 6;
+	height: 100%;
+	background-color: #FAFAFA;
+	-webkit-transform: translateX(100%);
+	z-index: 4;
     overflow: scroll;
-   
-
 }
 
-.section__profil--open{
-    -webkit-animation: TransPageList .6s forwards;
+.section__profil--open {
+    -webkit-animation: TransPageProfil 0.6 forwards;
 }
 
 .Menu{
@@ -304,7 +214,6 @@ button {
 	padding:0;
 	width:80%;
 	float:left;
-	
 }
 
 .prix{
@@ -320,9 +229,40 @@ button {
 /************************** SECTION PROFIL RESTAURANT ******************/
 
 /********************* ANIMATION DES PAGES ET CONTENUS **************/
+    
+@-webkit-keyframes TransPageProfil {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
 
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+            transform: translate3d(-3000px, 0, 0);
+  }
 
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+            transform: translate3d(25px, 0, 0);
+  }
 
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+            transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 
 @-webkit-keyframes landing {
     
@@ -363,6 +303,8 @@ button {
   }
 }
 
+
+
 @-webkit-keyframes TransPageList {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -396,6 +338,8 @@ button {
             transform: none;
   }
 }
+
+
 
 @keyframes TransPageMap {
   0%, 60%, 75%, 90%, 100% {
@@ -431,37 +375,6 @@ button {
   }
 }
 
-
-
-@-webkit-keyframes listElement1 {
-    
-15% {-webkit-transform: translateX(0%);}
-    100% {-webkit-transform: translateX(10%);}
-}
-
-@-webkit-keyframes listElement2 {
-    
-30% {-webkit-transform: translateX(0%);}
-    100% {-webkit-transform: translateX(10%);}
-}
-
-@-webkit-keyframes listElement3 {
-    
-45% {-webkit-transform: translateX(0%);}
-    100% {-webkit-transform: translateX(10%);}
-}
-
-@-webkit-keyframes listElement4 {
-    
-60% {-webkit-transform: translateX(0%);}
-    100% {-webkit-transform: translateX(10%);}
-}
-
-@-webkit-keyframes listElement5 {
-    
-75% {-webkit-transform: translateX(0%);}
-    100% {-webkit-transform: translateX(10%);}
-}
 
 /********************* FIN ANIMATION DES PAGES ET CONTENUS **************/
 
@@ -529,3 +442,21 @@ button {
 
 
 
+
+.fleche {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+
+  
+    
+}
+
+.profil0 {
+    position: absolute;
+     top: 1.5%;
+    right: 10%;
+    height: 150px;
+    width: 150px;
+    
+}

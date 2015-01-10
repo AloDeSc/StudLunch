@@ -4,19 +4,19 @@ var wheel1 = document.getElementsByClassName("wheel1"),
 
 
 		wheel1[0].addEventListener("click", function () {
-		section__list[0].classList.toggle('section__list--list');
+		section__list[0].classList.toggle('section__list--open');
 	
 	});
 
-var profil1 = document.getElementsByClassName("profil1"),
+var profil0 = document.getElementsByClassName("profil0"),
 	section__profil = document.getElementsByClassName("section__profil");
 
 
-		profil1[0].addEventListener("click", function () {
+		profil0[0].addEventListener("click", function () {
 		section__profil[0].classList.toggle('section__profil--open');
 	
 	});
-                    
+
 var Bouton = document.getElementsByClassName ("footer"),
 	Map = document.getElementById ("Map"),
 	Liste = document.getElementById ("Liste");
