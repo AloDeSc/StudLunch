@@ -2,7 +2,7 @@
 body {
 	max-width: 100%;
 	max-height: 100%;
-	margin: 0;
+	margin: 0 auto;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -38,6 +38,7 @@ form {
 	width: 100%;
 	height: 100%;
 	-webkit-animation: landing 1s 5s forwards;
+    display: none;
    
 }
 
@@ -120,6 +121,7 @@ button {
 	height: 1700px;
 	background-color: #EB5500;
 	z-index: 2;
+    display: none;
     
 }
 
@@ -136,9 +138,7 @@ height:100%;
 
 }
 
-.section__list--map {
-	-webkit-animation: TransPageMap .8s forwards;
-}
+
 
 .footer {
 	height: 170px;
@@ -153,7 +153,7 @@ height:100%;
     position: fixed;
     top: 169px;
 	width: 100%;
-	height: 100%;
+	height: 82%;
 	background-color: #FAFAFA;
 	-webkit-transform: translateX(100%);
 	z-index: 3;
@@ -192,17 +192,18 @@ height:100%;
     font-weight: bold;
     text-align: left;
 	float:left;
+    
 }
 
 .section__profil{
     position: fixed;
+    margin: 0;
     top: 169px;
-	width: 100%;
+	width: 200%;
 	height: 100%;
-	background-color: #FAFAFA;
-	-webkit-transform: translateX(100%);
+	background-color: #fafafa;
 	z-index: 4;
-    overflow: scroll;
+    
 }
 
 .section__profil--open {
@@ -210,24 +211,22 @@ height:100%;
 }
 
 .Menu{
-	margin:0;
-	padding:0;
-	width:80%;
-	float:left;
+   
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    margin: 0;
+	width: 80%;
+    height: 25%;;
+    font-size: 40px;
+    
 }
 
 .prix{
-	margin:0;
-	padding:0;
 	width:20%;
-	float:right;
 	height:100%;
 	/*text-align:right;*/
 }
-
-
-/************************** SECTION PROFIL RESTAURANT ******************/
-
 /********************* ANIMATION DES PAGES ET CONTENUS **************/
     
 @-webkit-keyframes TransPageProfil {
@@ -306,38 +305,11 @@ height:100%;
 
 
 @-webkit-keyframes TransPageList {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-3000px, 0, 0);
-            transform: translate3d(-3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-            transform: translate3d(25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-            transform: translate3d(-10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-            transform: translate3d(5px, 0, 0);
-  }
-
-  100% {
-    -webkit-transform: none;
-            transform: none;
-  }
+    	0% {-webkit-transform: translateX(-100%);}
+    100% {-webkit-transform: translateX(0%);}
 }
+
+    
 
 
 
@@ -453,6 +425,8 @@ height:100%;
     height: 200px;
     width: 200px;
     
+-webkit-animation: TransPageProfil .1s forwards;
+    
 }
 
 .Liste__restaurant {
@@ -461,4 +435,68 @@ height:100%;
     height: 100%;
     padding: 0;
     
+}
+
+.title__profil {
+    font-size: 130px;
+    position: relative;
+    margin: 0;
+    left: 1%;
+    top: 1%;
+    color: #e8360b;
+    text-align: left;
+    
+    
+    
+}
+
+.subtitle__profil {
+    width: 100%;
+    position: absolute;
+    left: 1%;
+    top: 19%;
+    font-size: 50px;
+    color: #e88d00;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.content {
+    height: 200px;
+    width: 100%;
+    float: left;
+}
+
+.info {
+    position: relative;
+    top: 2%;
+    left: 2%;
+    text-align: left;
+    height: 30%;
+    font-size: 30px;
+    width: 100%;
+    
+    
+}
+
+.horaire {
+    width: 100%;
+    position: absolute;
+    top: 44%;
+    left: 1%;
+    
+}
+
+
+.adress {
+    width: 100%;
+    position: absolute;
+    top: 42%;
+    left: 1%;
+    margin: 0;
+}
+
+.liste__produit {
+    overflow: scroll;
+    height: 20%;
 }
