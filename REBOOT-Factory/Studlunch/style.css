@@ -197,9 +197,9 @@ height:100%;
 
 .section__profil{
     position: fixed;
-    margin: 0;
+    margin-left: -25px;
     top: 169px;
-	width: 200%;
+	width: 100%;
 	height: 100%;
 	background-color: #fafafa;
 	z-index: 3;
@@ -502,4 +502,5 @@ height:100%;
     height: 60%;
     width: 50%;
     border-bottom: 10px solid #E88D00;
+    list-style: none;
 }
