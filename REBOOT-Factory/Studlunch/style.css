@@ -78,6 +78,7 @@ fieldset {
 	left: 20%;
 	padding: 0;
     border: none;
+    z-index: 4;
 }
 
 input {
@@ -89,7 +90,10 @@ input {
 	color: #E8360B;
 	border-radius: 90px;
 	background-color: #FAFAFA;
+    
+    
 }
+
 
 .header {  
     position: fixed;
@@ -154,8 +158,8 @@ height:100%;
     top: 169px;
 	width: 100%;
 	height: 82%;
+    -webkit-animation: TransPageList 0.8 forwards;
 	background-color: #FAFAFA;
-	-webkit-transform: translateX(100%);
 	z-index: 3;
     overflow: scroll
 }
@@ -197,13 +201,13 @@ height:100%;
 
 .section__profil{
     position: fixed;
-    margin-left: -25px;
+    
     top: 169px;
 	width: 100%;
 	height: 100%;
 	background-color: #fafafa;
 	z-index: 3;
-    -webkit-transform: scale(0);
+    
     
 }
 
@@ -503,4 +507,27 @@ height:100%;
     width: 50%;
     border-bottom: 10px solid #E88D00;
     list-style: none;
+}
+
+.logo__search {
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+.search__area {
+    background-color: #fafafa;
+    height: 100px;
+    width: 100px;
+    z-index: 5;
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+
+
+.classement {
+    width: 225px;
+    height: 66px;
 }
