@@ -38,7 +38,7 @@ form {
 	width: 100%;
 	height: 100%;
 	-webkit-animation: landing 1s 5s forwards;
-   
+    display: none;
    
 }
 
@@ -158,16 +158,16 @@ height:100%;
     top: 169px;
 	width: 100%;
 	height: 82%;
-    -webkit-animation: TransPageList 0.8 forwards;
+    -webkit-transform: translate(100%);
 	background-color: #FAFAFA;
 	z-index: 3;
-    overflow: scroll
+    overflow: scroll;
 }
 
 
 
 .section__list--open {
-	-webkit-animation: TransPageList 0.8s forwards;
+	-webkit-animation: list 0.8s forwards;
 	
 	
 }
@@ -201,19 +201,21 @@ height:100%;
 
 .section__profil{
     position: fixed;
-    
+    -webkit-transform: translate(100%); 
+    margin: 0;
     top: 169px;
 	width: 100%;
 	height: 100%;
 	background-color: #fafafa;
 	z-index: 3;
-    
-    
+   
 }
 
+
 .section__profil--open {
-    -webkit-animation: TransPageProfil 0.6 forwards;
+    -webkit-animation: profil0 .6s forwards;
 }
+
 
 .Menu{
    
@@ -234,7 +236,7 @@ height:100%;
 }
 /********************* ANIMATION DES PAGES ET CONTENUS **************/
     
-@-webkit-keyframes TransPageProfil {
+@-webkit-keyframes profil0 {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
             transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -307,18 +309,7 @@ height:100%;
   }
 }
 
-
-
-@-webkit-keyframes TransPageList {
-    	0% {-webkit-transform: translateX(-100%);}
-    100% {-webkit-transform: translateX(0%);}
-}
-
-    
-
-
-
-@keyframes TransPageMap {
+@-webkit-keyframes list {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
             transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -350,6 +341,12 @@ height:100%;
     -webkit-transform: none;
             transform: none;
   }
+}
+
+@-webkit-keyframes itineraire {
+    
+    0%{-webkit-transform: translateY(100%);}
+    100%{-webkit-transform: translateY(0%);}
 }
 
 
@@ -431,6 +428,7 @@ height:100%;
     width: 200px;
     
 -webkit-animation: TransPageProfil .1s forwards;
+-webkit-animation: itineraire .8s 2s forwards;
     
 }
 
@@ -530,4 +528,16 @@ height:100%;
 .classement {
     width: 225px;
     height: 66px;
+}
+
+.itineraire {
+    width: 100%;
+    height: 10%;
+    background-color: #872200;
+    color: #FAFAFA;
+    font-size: 80px;
+    position: absolute;
+    bottom: 18%;
+    -webkit-transform: translateY(100%);
+    -webkit-animation: itineraire .8s 4s forwards;
 }
